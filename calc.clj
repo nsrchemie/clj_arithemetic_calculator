@@ -1,3 +1,5 @@
 (defn calc [x]
 	(def nums (take-nth 2 x))
-	(println (+ (int (first nums)) (int (last nums)))))
+	(def num1 (Character/digit (first nums) 10))
+	(def num2 (last nums))
+	(println num1, (type num1), (type num2)))
