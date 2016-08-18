@@ -3,4 +3,5 @@
 	(def num1 (Character/digit (first nums) 10))
 	(def num2 (Character/digit (last nums) 10))
 	(def ops {"+" +})
-	(pr-str ((ops (str (get x 1))) num1 num2)))
+	(def oper (str (get x 1)))
+	(pr-str ((ops oper) num1 num2)))
